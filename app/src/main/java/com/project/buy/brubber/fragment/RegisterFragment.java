@@ -5,4 +5,6 @@ package com.project.buy.brubber.fragment;
  */
 
 public class RegisterFragment {
-}
+
+
+}   // Main Class

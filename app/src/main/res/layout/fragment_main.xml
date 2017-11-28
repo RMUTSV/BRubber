@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <!--WallPaper-->
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <!--content-->
     <LinearLayout
@@ -10,6 +17,7 @@
         android:padding="@dimen/margin"
         android:background="#b4ffffff"
         android:orientation="vertical"
+        android:layout_centerHorizontal="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
@@ -27,7 +35,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
             android:text="@string/thai_name"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="#039e44"
             android:textSize="@dimen/h1"
             android:textStyle="bold" />
 
@@ -90,14 +98,14 @@
 
             <!--Buyer-->
             <RadioButton
-                android:id="@+id/radBuyer"
+                android:id="@+id/radOwner"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="ร้านยาง" />
 
             <!--Saleser-->
             <RadioButton
-                android:id="@+id/radSaler"
+                android:id="@+id/radCustomers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -130,7 +138,4 @@
     </LinearLayout>
 
 
-
-
-
-</LinearLayout>
+</RelativeLayout>
