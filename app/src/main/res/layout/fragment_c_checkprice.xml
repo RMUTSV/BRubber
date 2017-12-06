@@ -10,18 +10,180 @@
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
         android:background="@color/colorAccent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:id="@+id/toolbarRegister">
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
     </android.support.v7.widget.Toolbar>
 
-
-
+    <!--น้ำยาง-->
     <LinearLayout
         android:orientation="vertical"
-        android:layout_margin="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+       <TextView
+           android:textColor="@color/colorWhite"
+           android:textSize="@dimen/h2"
+           android:textStyle="bold"
+           android:text="น้ำยาง"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="ิกิโลกรัมละ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h1"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    <!--ยางแผ่น-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            android:text="ยางแผ่น"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="ิกิโลกรัมละ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h1"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--ยางก้อน-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            android:text="ยางก้อน"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="ิกิโลกรัมละ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h1"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--menu-->
+    <LinearLayout
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="@dimen/h2"
+            android:textColor="@color/colorWhite"
+            android:text="ข้อมูลส่วนตัว"
+            android:background="@color/colorAccent"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/h2"
+            android:textColor="@color/colorAccent"
+            android:text="เช็คราคา"
+            android:background="@color/colorWhite"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/h2"
+            android:textColor="@color/colorWhite"
+            android:text="เงินฝาก"
+            android:background="@color/colorAccent"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:layout_marginLeft="2dp"
+            android:textSize="@dimen/h2"
+            android:textColor="@color/colorWhite"
+            android:text="รายงาน"
+            android:background="@color/colorAccent"
+            android:layout_width="90dp"
+            android:layout_height="match_parent" />
 
     </LinearLayout>
 

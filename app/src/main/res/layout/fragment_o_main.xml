@@ -17,10 +17,7 @@
     <ImageView
         android:src="@drawable/logo"
         android:layout_width="match_parent"
-        android:layout_height="60dp" />
-
-
-
+        android:layout_height="100dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -28,78 +25,60 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginRight="@dimen/margin"
-            android:id="@+id/btn1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#b4ffffff"
-            android:text="Start"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/h2" />
+        <!--Button-->
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
-        <Button
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginRight="@dimen/margin"
-            android:id="@+id/btn2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#b4ffffff"
-            android:text="Start"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/h2" />
 
-        <Button
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginRight="@dimen/margin"
-            android:id="@+id/btn3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#b4ffffff"
-            android:text="Start"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/h2" />
 
-        <Button
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginRight="@dimen/margin"
-            android:id="@+id/btn4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#b4ffffff"
-            android:text="Start"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/h2" />
+            <Button
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorAccent"
+                android:background="#b4ffffff"
+                android:text="รับซื้อยาง"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
 
-        <Button
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginRight="@dimen/margin"
-            android:id="@+id/btn5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#b4ffffff"
-            android:text="Start"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/h2" />
 
-        <Button
+            <Button
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorAccent"
+                android:background="#b4ffffff"
+                android:text="ราคายาง"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="@dimen/margin"
-            android:layout_marginRight="@dimen/margin"
-            android:id="@+id/btn6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#b4ffffff"
-            android:text="Start"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/h2" />
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorAccent"
+                android:background="#b4ffffff"
+                android:text="ลูกค้า"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorAccent"
+                android:background="#b4ffffff"
+                android:text="รายงานซื้อขาย"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
 
     </LinearLayout>
+
 
 
 </LinearLayout>
