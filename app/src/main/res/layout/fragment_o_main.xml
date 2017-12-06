@@ -14,6 +14,14 @@
         android:id="@+id/toolbarRegister">
     </android.support.v7.widget.Toolbar>
 
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+
+
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_margin="40dp"

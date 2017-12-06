@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorbg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Toolbar-->
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbarRegister">
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Button-->
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+                android:textSize="@dimen/h2"
+                android:textColor="#ffffff"
+                android:background="@color/colorAccent"
+                android:text="ข้อมูลส่วนตัว"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
+
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/h2"
+                android:textColor="#ffffff"
+                android:background="@color/colorAccent"
+                android:text="เช็คราคายาง"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="@dimen/h2"
+                android:textColor="#ffffff"
+                android:background="@color/colorAccent"
+                android:text="รายงานการขาย"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/h2"
+                android:textColor="#ffffff"
+                android:background="@color/colorAccent"
+                android:text="เงินฝาก"
+                android:layout_width="150dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
