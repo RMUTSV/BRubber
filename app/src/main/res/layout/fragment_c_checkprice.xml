@@ -16,7 +16,7 @@
     <!--น้ำยาง-->
     <LinearLayout
         android:orientation="vertical"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="@dimen/marginTop"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
