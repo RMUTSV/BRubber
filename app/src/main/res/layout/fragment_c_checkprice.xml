@@ -11,7 +11,28 @@
         android:layout_height="?actionBarSize"
         android:background="@color/colorAccent"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:src="@drawable/ic_action_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/h1"
+            android:text="เช็คราคายาง"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
     </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:background="#99ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
 
     <!--น้ำยาง-->
     <LinearLayout
@@ -22,13 +43,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-       <TextView
-           android:textColor="@color/colorWhite"
-           android:textSize="@dimen/h2"
-           android:textStyle="bold"
-           android:text="น้ำยาง"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold"
+            android:text="น้ำยาง"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,21 +62,25 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิกิโลกรัมละ"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content" />
 
-
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/h1"
                 android:textColor="@color/colorWhite" />
 
+            <TextView
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="ิบาท"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
-
-        </LinearLayout>
-
+    </LinearLayout>
 
     <!--ยางแผ่น-->
     <LinearLayout
@@ -85,15 +110,24 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิกิโลกรัมละ"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content" />
 
 
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/h1"
                 android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="บาท"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
 
         </LinearLayout>
 
@@ -128,25 +162,32 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิกิโลกรัมละ"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content" />
 
-
             <EditText
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/h1"
                 android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:text="บาท"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
 
         </LinearLayout>
 
     </LinearLayout>
 
-
     <!--menu-->
     <LinearLayout
-        android:layout_marginRight="5dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -186,6 +227,5 @@
             android:layout_height="match_parent" />
 
     </LinearLayout>
-
 
 </LinearLayout>
