@@ -4,4 +4,6 @@
     <string name="name_store">ชื่อร้าน :</string>
     <string name="id_store">รหัสร้าน :</string>
     <string name="password">รหัสผ่าน :</string>
+    <string name="title_activity_fragment_main">fragment_main</string>
+    <string name="title_activity_main_fragment">MainFragment</string>
 </resources>

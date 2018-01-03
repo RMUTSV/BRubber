@@ -32,11 +32,63 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_margin="40dp"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/txtName"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/h1"
+            android:text="ชื่อ-สกุล :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--Lift-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/colorGray"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/h2"
+                    android:text="รหัส :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorGray"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/h2"
+                    android:text="เบอร์โทร :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="@color/colorGray"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/h2"
+                    android:text="ที่อยู่ :"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
 
     </LinearLayout>
 

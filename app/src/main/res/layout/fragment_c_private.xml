@@ -31,25 +31,25 @@
 
 
     <LinearLayout
-        android:layout_marginTop="@dimen/marginTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_marginTop="@dimen/marginTop"
+        android:orientation="vertical">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลลูกค้า"
                 android:textColor="@color/colorWhite"
                 android:textSize="@dimen/h2"
-                android:textStyle="bold"
-                android:text="ข้อมูลลูกค้า"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -60,19 +60,19 @@
 
 
             <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ิรหัส :"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -82,19 +82,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ิชื่อ - สกุล :"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -104,19 +104,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ิเบอร์โทร :"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -126,19 +126,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ิรหัสผ่าน :"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
 
         </LinearLayout>
 
@@ -148,38 +148,37 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ิที่อยู่ :"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16dp"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="16dp" />
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop"
+            android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_marginTop="@dimen/marginTop"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ข้อมูลนายจ้าง"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/h2"
+                android:textStyle="bold" />
 
-                <TextView
-                    android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/h2"
-                    android:textStyle="bold"
-                    android:text="ข้อมูลนายจ้าง"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-
-            </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -187,19 +186,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="ิรหัสนายจ้าง :  "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textColor="#b4464444"
+                android:textSize="16dp"
+                android:textStyle="bold" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/h2"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/h2" />
 
         </LinearLayout>
 
@@ -209,31 +208,31 @@
             android:orientation="horizontal">
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ิชื่อนายจ้าง :     "
                 android:textColor="#b4464444"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="ิชื่อนายจ้าง :     "
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold" />
 
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/h2"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/h2" />
 
         </LinearLayout>
 
         <TextView
-            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:clickable="true"
             android:text="แก้ไขรหัสผ่าน"
             android:textColor="@color/colorAccent"
             android:textSize="16dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 
