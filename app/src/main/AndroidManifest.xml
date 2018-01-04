@@ -24,6 +24,7 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".fragment.RegisterFragment"/>
+        <activity android:name=".fragment_C.Main_C_Fragment"/>
 
     </application>
 

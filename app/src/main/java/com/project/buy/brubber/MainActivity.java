@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.project.buy.brubber.fragment.MainFragment;
+import com.project.buy.brubber.fragment_C.Main_C_Fragment;
 
 
 public class MainActivity extends AppCompatActivity{
@@ -27,24 +28,25 @@ public class MainActivity extends AppCompatActivity{
         setContentView(R.layout.activity_main);
     }
 
-// กด กลับเพือออกจากแอพ
+    // กด กลับเพื่อออกจากแอพ
     public void onBackPressed() {
         final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
         dialog.setTitle("ออกจากแอพพลิเคชั่น ?");
         dialog.setIcon(R.drawable.ic_action_alert);
         dialog.setCancelable(true);
-        dialog.setMessage("คุณกำลังออกจากแอพพลิเคชั่น โปรดยืนยัน");
-        dialog.setPositiveButton("ตกลง", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int i) {
-                finish();
-            }
-        });
-
-        dialog.setNegativeButton("ยกเลิก", new DialogInterface.OnClickListener() {
+        dialog.setMessage("กรุณายืนยันเพื่อออกจากระบบ");
+        dialog.setPositiveButton("ยกเลิก", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int i) {
                 dialog.cancel();
+            }
+        });
+
+        dialog.setNegativeButton("ตกลง", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int i) {
+                finish();
+
             }
         });
 
