@@ -23,7 +23,7 @@
             app:expandedTitleMarginStart="48dp"
             app:layout_scrollFlags="exitUntilCollapsed|scroll"
             app:title="@string/thai_name"
-            android:background="@drawable/materialbg">
+            android:background="@drawable/bg">
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbarid"

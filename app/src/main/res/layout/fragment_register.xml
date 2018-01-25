@@ -12,7 +12,6 @@
         android:background="@color/colorAccent"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:id="@+id/toolbarRegister">
-
     </android.support.v7.widget.Toolbar>
 
     <!--Content-->

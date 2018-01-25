@@ -7,16 +7,16 @@ import android.support.annotation.Nullable;
 import com.project.buy.brubber.R;
 
 /**
- * Created by sasiporn on 12/12/2017 AD.
+ * Created by sasiporn on 1/11/2018 AD.
  */
 
-public class Report_O_Fragment extends Activity {
+public class Sheet_Report_O_Fragment extends Activity {
 
     // ทำให้รู้จักกับ xml
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_o_report);
+        setContentView(R.layout.fragment_o_report_sheet);
 
     }
 }

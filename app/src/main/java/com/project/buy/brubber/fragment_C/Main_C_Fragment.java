@@ -22,6 +22,5 @@ public class Main_C_Fragment extends Activity {
         setContentView(R.layout.fragment_c_main);
 
     }
-
-
+    
 }

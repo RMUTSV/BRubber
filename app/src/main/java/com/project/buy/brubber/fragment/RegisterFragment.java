@@ -33,10 +33,6 @@ public class RegisterFragment extends Activity{
         setSupportActionBar(toolbar);
         toolbar.setTitle("สมัครร้านยาง");
 
-
-    }
-
-    private void getSupportActionBar() {
     }
 
     private void setSupportActionBar(Toolbar toolbar) {

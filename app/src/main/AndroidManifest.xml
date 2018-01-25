@@ -22,9 +22,30 @@
             android:name=".fragment.MainFragment"
             android:label="@string/title_activity_fragment_main"
             android:theme="@style/AppTheme" />
-        <activity
-            android:name=".fragment.RegisterFragment"/>
+        <activity android:name=".fragment.RegisterFragment"/>
+        <activity android:name=".fragment.EditpassFragment"/>
+
+        <activity android:name=".fragment_C.Checkprice_C_Fragment"/>
+        <activity android:name=".fragment_C.Cube_Report_C_Fragment"/>
+        <activity android:name=".fragment_C.Latex_Report_C_Fragment"/>
         <activity android:name=".fragment_C.Main_C_Fragment"/>
+        <activity android:name=".fragment_C.Money_C_Fragment"/>
+        <activity android:name=".fragment_C.Private_C_Fragment"/>
+        <activity android:name=".fragment_C.Report_C_Fragment"/>
+        <activity android:name=".fragment_C.Sheet_Report_C_Fragment"/>
+
+        <activity android:name=".fragment_O.Add_Customer_O_Fragment"/>
+        <activity android:name=".fragment_O.Buy_O_Fragment"/>
+        <activity android:name=".fragment_O.Cube_Buy_O_Fragment"/>
+        <activity android:name=".fragment_O.Cube_Report_O_Fragment"/>
+        <activity android:name=".fragment_O.Customer_O_Fragment"/>
+        <activity android:name=".fragment_O.EditPrice_O_Fragment"/>
+        <activity android:name=".fragment_O.Latex_Buy_O_Fragment"/>
+        <activity android:name=".fragment_O.Latex_Report_O_Fragment"/>
+        <activity android:name=".fragment_O.Main_O_Fragment"/>
+        <activity android:name=".fragment_O.Report_O_Fragment"/>
+        <activity android:name=".fragment_O.Sheet_Buy_O_Fragment"/>
+        <activity android:name=".fragment_O.Sheet_Report_O_Fragment"/>
 
     </application>
 
