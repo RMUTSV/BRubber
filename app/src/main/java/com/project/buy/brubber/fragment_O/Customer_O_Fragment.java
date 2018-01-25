@@ -3,6 +3,7 @@ package com.project.buy.brubber.fragment_O;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.Toolbar;
 
 import com.project.buy.brubber.R;
 
@@ -12,11 +13,19 @@ import com.project.buy.brubber.R;
 
 public class Customer_O_Fragment extends Activity {
 
+    private Toolbar toolbar;
+
     // ทำให้รู้จักกับ xml
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_o_customer);
 
+        toolbar = (Toolbar) findViewById(R.id.toolbarOCustomer);
+        setSupportActionBar(toolbar);
+        toolbar.setTitle("ลูกค้า");
+    }
+
+    private void setSupportActionBar(Toolbar toolbar) {
     }
 }

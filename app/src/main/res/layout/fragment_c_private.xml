@@ -1,224 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/colorbg"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_C.Private_C_Fragment"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--Toolbar-->
-    <android.support.v7.widget.Toolbar
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="200dp"
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="@color/colorAccent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:id="@+id/toolbarCPrivate">
-    </android.support.v7.widget.Toolbar>
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    <LinearLayout
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:title="ข้อมูลส่วนตัว">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarCPrice"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="80dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ข้อมูลลูกค้า"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/h2"
-                android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center">
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+
+    </android.support.v4.widget.NestedScrollView>
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ิรหัส :"
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ิชื่อ - สกุล :"
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ิเบอร์โทร :"
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ิรหัสผ่าน :"
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ิที่อยู่ :"
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:textSize="16dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginTop"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ข้อมูลนายจ้าง"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/h2"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ิรหัสนายจ้าง :  "
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/h2" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="ิชื่อนายจ้าง :     "
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold" />
-
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"
-                android:textSize="@dimen/h2" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:text="แก้ไขรหัสผ่าน"
-            android:textColor="@color/colorAccent"
-            android:textSize="16dp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
 
     // button
     <android.support.design.widget.BottomNavigationView
@@ -233,17 +65,15 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:onClick="onClickNext"
                 android:id="@+id/btnCPrivate"
                 android:textSize="@dimen/h2"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/colorWhite"
                 android:text=" ข้อมูลส่วนตัว "
-                android:background="@color/colorWhite"
+                android:background="@color/colorPrimary"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
 
             <Button
-                android:onClick="onClickNext"
                 android:id="@+id/btnCPrice"
                 android:layout_marginLeft="2dp"
                 android:textSize="@dimen/h2"
@@ -254,7 +84,6 @@
                 android:layout_height="match_parent" />
 
             <Button
-                android:onClick="onClickNext"
                 android:id="@+id/btnCMoney"
                 android:layout_marginLeft="2dp"
                 android:textSize="@dimen/h2"
@@ -265,7 +94,6 @@
                 android:layout_height="match_parent" />
 
             <Button
-                android:onClick="onClickNext"
                 android:id="@+id/btnCReport"
                 android:layout_marginLeft="2dp"
                 android:textSize="@dimen/h2"

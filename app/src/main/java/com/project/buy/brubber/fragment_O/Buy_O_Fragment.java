@@ -15,7 +15,7 @@ public class Buy_O_Fragment extends Activity {
 
     private Toolbar toolbar;
 
-// ทำให้รู้จักกับ xml
+    // ทำให้รู้จักกับ xml
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +23,7 @@ public class Buy_O_Fragment extends Activity {
 
         toolbar = (Toolbar) findViewById(R.id.toolbarOBuy);
         setSupportActionBar(toolbar);
-        toolbar.setTitle("ร้านรับซื้อยางพารา");
-
+        toolbar.setTitle("รับซื้อยางพารา");
     }
 
     private void setSupportActionBar(Toolbar toolbar) {

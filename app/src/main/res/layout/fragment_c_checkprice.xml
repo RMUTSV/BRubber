@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/colorbg"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,223 +8,70 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorAccent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <ImageView
-            android:id="@+id/btnBack"
-            android:src="@drawable/ic_action_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_marginLeft="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/h1"
-            android:text="เช็คราคายาง"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbarCPrice">
     </android.support.v7.widget.Toolbar>
 
-    <TextView
-        android:background="#99ffffff"
-        android:layout_width="match_parent"
-        android:layout_height="60dp" />
+    // button
 
-    <!--น้ำยาง-->
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="@dimen/marginTop"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+    <android.support.design.widget.BottomNavigationView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/h2"
-            android:textStyle="bold"
-            android:text="น้ำยาง"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/NavBot"
+        android:layout_gravity="bottom">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="ิกิโลกรัมละ"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content" />
-
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/h1"
-                android:textColor="@color/colorWhite" />
-
-            <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="ิบาท"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <!--ยางแผ่น-->
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/h2"
-            android:textStyle="bold"
-            android:text="ยางแผ่น"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            <Button
+                android:onClick="onClickNext"
+                android:id="@+id/btnCPrivate"
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorWhite"
+                android:text=" ข้อมูลส่วนตัว "
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-            <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="ิกิโลกรัมละ"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content" />
+            <Button
+                android:onClick="onClickNext"
+                android:id="@+id/btnCPrice"
+                android:layout_marginLeft="2dp"
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorWhite"
+                android:text="เช็คราคา"
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
+            <Button
+                android:onClick="onClickNext"
+                android:id="@+id/btnCMoney"
+                android:layout_marginLeft="2dp"
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorWhite"
+                android:text="เงินฝาก"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/h1"
-                android:textColor="@color/colorWhite" />
-
-            <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="บาท"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
+            <Button
+                android:onClick="onClickNext"
+                android:id="@+id/btnCReport"
+                android:layout_marginLeft="2dp"
+                android:textSize="@dimen/h2"
+                android:textColor="@color/colorWhite"
+                android:text="รายงาน"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
 
         </LinearLayout>
 
-    </LinearLayout>
+    </android.support.design.widget.BottomNavigationView>
 
 
-    <!--ยางก้อน-->
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/h2"
-            android:textStyle="bold"
-            android:text="ยางก้อน"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="ิกิโลกรัมละ"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content" />
-
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:textSize="@dimen/h1"
-                android:textColor="@color/colorWhite" />
-
-            <TextView
-                android:textColor="#b4464444"
-                android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="บาท"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <!--menu-->
-    <LinearLayout
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:textSize="@dimen/h2"
-            android:textColor="@color/colorWhite"
-            android:text="ข้อมูลส่วนตัว"
-            android:background="@color/colorAccent"
-            android:layout_width="100dp"
-            android:layout_height="match_parent" />
-
-        <Button
-            android:layout_marginLeft="2dp"
-            android:textSize="@dimen/h2"
-            android:textColor="@color/colorAccent"
-            android:text="เช็คราคา"
-            android:background="@color/colorWhite"
-            android:layout_width="90dp"
-            android:layout_height="match_parent" />
-
-        <Button
-            android:layout_marginLeft="2dp"
-            android:textSize="@dimen/h2"
-            android:textColor="@color/colorWhite"
-            android:text="เงินฝาก"
-            android:background="@color/colorAccent"
-            android:layout_width="90dp"
-            android:layout_height="match_parent" />
-
-        <Button
-            android:layout_marginLeft="2dp"
-            android:textSize="@dimen/h2"
-            android:textColor="@color/colorWhite"
-            android:text="รายงาน"
-            android:background="@color/colorAccent"
-            android:layout_width="90dp"
-            android:layout_height="match_parent" />
-
-    </LinearLayout>
-
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

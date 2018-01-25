@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="@color/colorbg"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,29 +8,10 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?actionBarSize"
-        android:background="@color/colorAccent"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <ImageView
-            android:id="@+id/btnBack"
-            android:src="@drawable/ic_action_back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-        <TextView
-            android:layout_marginLeft="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorWhite"
-            android:textSize="@dimen/h1"
-            android:text="รับซื้อน้ำยาง"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:id="@+id/toolbarOBuyLatex">
     </android.support.v7.widget.Toolbar>
-    <TextView
-        android:background="#99ffffff"
-        android:layout_width="match_parent"
-        android:layout_height="60dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -44,7 +24,7 @@
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorAccent" />
 
 <!--น้ำหนัก-->
         <LinearLayout
@@ -54,7 +34,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิน้ำหนัก"
@@ -65,10 +45,10 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/h1"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorAccent" />
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิกก."
@@ -83,7 +63,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิเปอร์เซ็นต์"
@@ -94,10 +74,10 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/h1"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorAccent" />
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิ%"
@@ -113,7 +93,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold"
                 android:text="ิยางแห้ง"
@@ -128,7 +108,7 @@
                 android:textColor="@color/colorYellow" />
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold"
                 android:text="ิ%"
@@ -144,7 +124,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิราคา"
@@ -155,10 +135,10 @@
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/h1"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorAccent" />
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="ิบาท"
@@ -174,7 +154,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold"
                 android:text="ิยอดเงิน"
@@ -189,7 +169,7 @@
                 android:textColor="@color/colorYellow" />
 
             <TextView
-                android:textColor="@color/colorWhite"
+                android:textColor="@color/colorPrimary"
                 android:textSize="@dimen/h1"
                 android:textStyle="bold"
                 android:text="ิบาท"
