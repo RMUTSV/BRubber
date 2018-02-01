@@ -17,8 +17,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
         android:layout_marginTop="80dp"
         android:orientation="vertical">
 
@@ -29,7 +29,8 @@
             android:background="#b4ffffff"
             android:text="รายงานการขายน้ำยาง"
             android:layout_width="300dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/latex"/>
 
         <Button
             android:layout_gravity="center"
@@ -39,7 +40,8 @@
             android:background="#b4ffffff"
             android:text="รายงานการขายยางแผ่น"
             android:layout_width="300dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/sheet"/>
 
         <Button
             android:layout_gravity="center"
@@ -49,7 +51,8 @@
             android:background="#b4ffffff"
             android:text="รายงานการขายยางก้อน"
             android:layout_width="300dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/cube"/>
 
 
     </LinearLayout>

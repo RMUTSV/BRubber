@@ -27,7 +27,8 @@
             android:background="#b4ffffff"
             android:text="รายงานการขายน้ำยาง"
             android:layout_width="300dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/latex"/>
 
         <Button
             android:layout_gravity="center"
@@ -37,7 +38,8 @@
             android:background="#b4ffffff"
             android:text="รายงานการขายยางแผ่น"
             android:layout_width="300dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/sheet"/>
 
         <Button
             android:layout_gravity="center"
@@ -47,7 +49,8 @@
             android:background="#b4ffffff"
             android:text="รายงานการขายยางก้อน"
             android:layout_width="300dp"
-            android:layout_height="100dp" />
+            android:layout_height="100dp"
+            android:drawableLeft="@drawable/cube"/>
 
     </LinearLayout>
 

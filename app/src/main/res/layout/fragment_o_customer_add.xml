@@ -23,7 +23,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textSize="@dimen/h2"
             android:textStyle="bold"
             android:text="ข้อมูลลูกค้า"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:hint="รหัส :"
             android:inputType="text"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorAccent" />
 
         <EditText
             android:layout_marginRight="40dp"
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:hint="ชื่อ :"
             android:inputType="text"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorAccent" />
 
         <EditText
             android:layout_marginRight="40dp"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:hint="สกุล :"
             android:inputType="text"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorAccent" />
 
         <EditText
             android:layout_marginRight="40dp"
@@ -64,11 +64,11 @@
             android:layout_height="wrap_content"
             android:hint="ที่อยู่ :"
             android:inputType="text"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorAccent" />
 
         <TextView
             android:layout_marginTop="@dimen/marginTop"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textSize="@dimen/h2"
             android:textStyle="bold"
             android:text="ข้อมูลนายจ้างลูกค้า"
@@ -82,7 +82,7 @@
             android:layout_height="wrap_content"
             android:hint="รหัสผ่าน :"
             android:inputType="text"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorAccent" />
 
         <EditText
             android:layout_marginRight="40dp"
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:hint="รหัสนายจ้าง :"
             android:inputType="text"
-            android:textColor="@color/colorWhite" />
+            android:textColor="@color/colorAccent" />
 
 
     </LinearLayout>
