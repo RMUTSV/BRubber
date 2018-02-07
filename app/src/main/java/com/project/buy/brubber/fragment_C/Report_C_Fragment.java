@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
+import android.widget.Button;
 
 import com.project.buy.brubber.R;
 
@@ -24,8 +25,13 @@ public class Report_C_Fragment extends Activity {
         toolbar = (Toolbar) findViewById(R.id.toolbarCReport);
         setSupportActionBar(toolbar);
         toolbar.setTitle("รายงานการขาย");
+
     }
 
     private void setSupportActionBar(Toolbar toolbar) {
     }
+
+
+
+
 }
